@@ -7,13 +7,12 @@ import java.util.Arrays;
  */
 public class findInTable {
     /**
-     *
      * @param table in which we are going to find a value
      * @param value to be found in table
-     * @return position of value in table or -1 when the value is not in table
+     * @return first position of value in table or -1 when the value is not in table
      */
 
-    public static int positionInTable(int[] table, int value){
+    public static int firstPosition(int[] table, int value){
         int[] copiedTable = Arrays.copyOf(table, table.length+1);
         copiedTable[table.length] = value;
 
